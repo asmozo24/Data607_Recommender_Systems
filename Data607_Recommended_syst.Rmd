@@ -1,0 +1,63 @@
+---
+title: "DATA607: Recommender Systems"
+author: "Alexis Mekueko"
+date: "11/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-packages, results='hide',warning=FALSE, message=FALSE}
+#loading all library needed for this assignment
+library(tidyverse) 
+library(magick)
+
+```
+
+https://www.google.com/search?client=firefox-b-1-d&q=how+many+people+use+gmail
+
+### Week 11 Discussion:  Recommender Systems 
+Your task is to analyze an existing recommender system that you find interesting.  You should:
+
+    1- Perform a Scenario Design analysis as described below.  Consider whether it makes sense for your selected recommender system to perform scenario design twice, once for the organization (e.g. Amazon.com) and once for the organization's customers.
+    2- Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere.
+    3- Include specific recommendations about how to improve the site's recommendation capabilities going forward. 
+    4- Create your report using an R Markdown file, and create a discussion thread with a link to the GitHub repo where your Markdown file notebook resides.  You are not expected to need to write code for this discussion assignment.
+
+## Gmail Recommender System
+Gmail is one of the Google popular products used by 1.8 billion users. Gmail is an email account service that Google offers freely to millions of users. In addtion to free email account, Google allocaed 15GB of digital storage for free which can include any other account one might have such as Google Drive, Google Photos. I chose Gmail because I use it almost every day for email communication and I think many other users out do as well.
+
+```{r, echo=FALSE}
+#reading a jpg image from github repo
+image1 <- image_read('https://raw.githubusercontent.com/asmozo24/DATA606_Homework_Presentation/main/problem.JPG')
+#displaying the image
+image1
+#print(image1)
+
+```
+
+### Scenario Analysis
+
+Who are the target users of the site? 
+Answer: all people who use email as one way to communicate over the internet.
+
+What are their key goals?
+Answer: to be able to send and receive their messages just like they do with mail post. 
+        to be able to manage their email account in a very simple manner.
+
+How can the site help the users accomplish their goals?
+Answer: Google can help the users accompplish their goals by ensuring every messages sent gets to destination and every message received is accessible to read.
+        Making easy to navigate within email account and perform basic operations such as sorting, deleting, and archiving. 
+        
+
+### Improving Gmail Recommender System
+
+Google has been doing a lot of work in upgrading the Gmail account services. However, there is still that little habit of "developer display". No all user have developer approach when it comes to emailing. I think Google can create 03 instance of service: basic, intermediate and advance. For each instance, Google can demmonstrate in a pdf format or youtube video what users can expect in term of usability.
+For example: in basic account: the filter should be simplify. No need expand many times. one click should be able to select all unread/read email, one click should be able to select mail by specific date, one click should be to send an email to archive folder, one click should be able to access spam/archive folders. all the operations defined for a basic account should be done without the need to write query or do complicated setting. The Gmail training and help should be simplified to written and graphic or video instructions. For example, having a cheat sheets is the assumption user is trying to perform an operation and cannot remember the correct way. This is typical for developer not for users who simply want to send, read and manage email. I think giving option to users to select the account level will remove the extra work or unecessary work.   
+
+
+
+
+
